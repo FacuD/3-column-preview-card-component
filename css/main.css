@@ -1,3 +1,8 @@
+/* Tipografias */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
 /* Default */
 
 * {
@@ -8,4 +13,82 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    justify-content: center;    /* Eje X */
+    align-items: center;        /* Eje Y */
+    background-color: white;
+}
+
+/* Principal */
+
+.principal {
+    display: flex;
+    justify-content: center;    /* Centrar Horizontalmente */
+    max-width: 768px;
+    min-width: 320px;
+}
+
+/* Columnas */
+
+.columnas {
+    color: white;
+    padding: 2rem;
+    width: 25%;
+}
+
+.columnas:first-of-type {
+    border-radius: 1rem 0 0 1rem;
+}
+
+.columnas:last-of-type {
+    border-radius: 0 1rem 1rem 0;
+}
+
+.titulos {
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+
+.descripcion {
+    color: white;
+    margin-bottom: 4rem;
+    font-size: 14px;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.botones {
+    border-radius: 2rem;
+    background-color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 12.5px;
+}
+
+.sedans .botones {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs .botones {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury .botones {
+    color: hsl(179, 100%, 13%);
 }
